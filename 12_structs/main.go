@@ -16,7 +16,7 @@ type Person struct {
 	age                                 int
 }
 
-// two type method: 1. value receiver (that doesn't chage the values), 2. pointer receiver (that chages the values)
+// two type method: 1. value receiver (that doesn't change the values), 2. pointer receiver (that changes the values)
 
 // greet method (value receiver)
 func (p Person) greet() string {

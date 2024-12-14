@@ -18,4 +18,6 @@ func main() {
 	// slices stuff
 	fmt.Println(len(fruits))
 	fmt.Println(fruits[1:3])
+	new_array := fruits[1:3]
+	fmt.Printf("%T\n", new_array)
 }
