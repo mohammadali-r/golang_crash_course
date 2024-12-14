@@ -2,6 +2,11 @@ package main
 import "fmt"
 
 func main(){
+	// how to declare a variable
+	var fruit string
+	fruit = "orange"
+	fmt.Println(fruit)
+
 	// how to check the type of a var
 	// var name = "MohammadAli"
 	// fmt.Println(name)
