@@ -6,6 +6,9 @@ func main(){
 	var fruit string
 	fruit = "orange"
 	fmt.Println(fruit)
+	var number int
+	number = 26
+	fmt.Println(number)
 
 	// how to check the type of a var
 	// var name = "MohammadAli"
@@ -27,4 +30,9 @@ func main(){
 	fmt.Println(name, family)
 	fmt.Printf("%T\n", name)
 	fmt.Printf("%T\n", family)
+
+	fmt.Printf("%v\n", fruit)
+	fmt.Printf("%v\n", number)
+	fmt.Printf("%v\n", lamp)
+	fmt.Printf("%v\n", name)
 }
