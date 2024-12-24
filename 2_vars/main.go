@@ -1,13 +1,12 @@
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 	// how to declare a variable
-	var fruit string
-	fruit = "orange"
+	var fruit string = "orange"
 	fmt.Println(fruit)
-	var number int
-	number = 26
+	var number int = 26
 	fmt.Println(number)
 
 	// how to check the type of a var
@@ -16,7 +15,9 @@ func main(){
 	// fmt.Printf("%T\n", name)
 
 	// how to declare a constant
-	const lamp = true
+	const num int = 15
+	const lamp = true // type inference, Go can infer the type of the constant
+	fmt.Println(num)
 	fmt.Println(lamp)
 	fmt.Printf("%T\n", lamp)
 
