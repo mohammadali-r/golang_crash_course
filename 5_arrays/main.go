@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 func main() {
@@ -38,4 +39,10 @@ func main() {
 	fmt.Printf("Type of cars: %T\n", cars)
 	fmt.Printf("Type of fruits: %T\n", fruits)
 	fmt.Printf("Type of foods: %T\n", foods)
+
+	// type check with reflect
+	fmt.Println("Type check with reflect:")
+	fmt.Println("cars:", reflect.TypeOf(cars).Kind())
+	fmt.Println("fruits:", reflect.TypeOf(fruits).Kind())
+	fmt.Println("foods:", reflect.TypeOf(foods).Kind())
 }
