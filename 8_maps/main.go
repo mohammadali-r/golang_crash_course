@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
 	// define map
@@ -22,6 +25,14 @@ func main() {
 	fmt.Println(ids)
 	fmt.Println(len(ids))
 	fmt.Println(ids[2])
+
+	// type check
+	fmt.Printf("Type of emails: %T\n", emails)
+	fmt.Printf("Type of ids: %T\n", ids)
+
+	// with reflect
+	fmt.Println("emails reflect:", reflect.TypeOf(emails).Kind())
+	fmt.Println("ids reflect:", reflect.TypeOf(ids).Kind())
 
 	// delete from map
 	delete(ids, 3)
